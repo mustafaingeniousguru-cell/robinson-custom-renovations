@@ -31,9 +31,16 @@ export default function HomeServicesSection() {
           </FlipFadeText>
         </div>
 
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 lg:gap-5 items-stretch">
-          {homeServices.map((service) => (
-            <div key={service.id} className="h-full">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 items-stretch">
+          {homeServices.map((service, index) => (
+            <div
+              key={service.id}
+              className={`h-full ${
+                homeServices.length % 2 === 1 && index === homeServices.length - 1
+                  ? 'col-span-2 mx-auto w-1/2 md:col-span-1 md:mx-0 md:w-full'
+                  : ''
+              }`}
+            >
               <ServiceCard3D service={service} showDescription={false} />
             </div>
           ))}
