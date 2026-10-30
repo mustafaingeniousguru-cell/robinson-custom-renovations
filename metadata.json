@@ -1,0 +1,6 @@
+{
+  "name": "Robinson Custom Renovations",
+  "description": "Premier construction, remodeling, and home improvement services in East Alton, IL and the Greater Riverbend area.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
